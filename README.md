@@ -1,2 +1,15 @@
-# KNN-Model
-This project is of classification model based on knn algorithm. Lets imagine that you are working in the recycling division of the department of energy. The government has requested your division to identify the types of plastics found in the sea so that they can take necessary actions to reduce or prevent their usage. You are required to find the type of plastic, given its remains from the sea  Assuming that there are only six different types d plastics. The compositions of plastics vary over a specific range of values. You are provided with the data regarding the range of composition percentages, properties and the corresponding types of plastic.
+# HELPER FUNCTIONS
+
+To read a csv file and convert into numpy array, you can use genfromtxt of the numpy package.
+For Example:
+```
+train_data = np.genfromtxt(train_X_file_path, dtype=np.float64, delimiter=',', skip_header=1)
+```
+You can use the python csv module for writing data to csv files.
+Refer to https://docs.python.org/2/library/csv.html.
+For Example:
+```
+with open('sample_data.csv', 'w') as csv_file:
+	writer = csv.writer(csv_file)
+    writer.writerows(data)
+```
